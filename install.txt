@@ -1,0 +1,26 @@
+https://www.npmjs.com/package/websocket
+npm install websocket
+
+https://www.npmjs.com/package/ws
+npm install ws
+
+npm install --save-optional bufferutil: Allows to efficiently perform operations such as masking and unmasking the data payload of the WebSocket frames.
+npm install --save-optional utf-8-validate: Allows to efficiently check if a message contains valid UTF-8 as required by the spec.
+
+
+---------------------------
+C:\wamp64\bin\apache\apache2.4.23\conf\extra\httpd-vhosts.conf
+# Virtual Hosts
+#
+
+<VirtualHost *:80>
+	ServerName localhost
+	DocumentRoot c:/wamp64/www
+	<Directory  "c:/wamp64/www/">
+		Options +Indexes +Includes +FollowSymLinks +MultiViews
+		AllowOverride All
+		#Require local
+		Require all granted
+	</Directory>
+</VirtualHost>
+#

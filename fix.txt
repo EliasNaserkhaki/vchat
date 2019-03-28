@@ -1,0 +1,15 @@
+// Don't do this
+video.src = URL.createObjectURL(stream);
+// Do this
+video.srcObject = stream;
+
+https://stackoverflow.com/questions/52677448/typeerror-argument-1-is-not-valid-for-any-of-the-1-argument-overloads-of-url-cr
+------------------------------
+https://stackoverflow.com/questions/35698061/why-node-js-requires-an-upgrade-while-trying-to-run-an-application-on-the-localh
+After running your web-socket server,
+
+localhost:[port]/client.html -> you will get the message "upgrade required".
+
+file:///[folder]/client.html -> you can see your HTML file.
+
+because you don't have any web-server with a web-socket or you did not configure your web server for your web-socket. So, you should use your file system.
